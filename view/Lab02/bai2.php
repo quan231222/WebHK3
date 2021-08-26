@@ -4,25 +4,24 @@
         <style>
             div {
                 position: absolute;
-                top: 175px;
+                top: 100px;
                 left: 525px;
                 background-color: #3DED97;
                 width: 500px;
                 border-radius:25px;
             }
-
-            h2, p, span.ketqua {
-                color: white;
+            h2, p {
+                color: #ffa500;
                 text-align: center;
                 margin:0;
             }
-            input {
+            input, textarea {
                 display: block;
                 margin: auto;
+                background-color: #98FB98;
                 border-radius: 10px;
-                border-color: white;
+                border-color: #ADFF2F;
             }
-
         </style>
     </head>
     <body>
@@ -53,8 +52,8 @@
                             $x1 = (-$b + sqrt($delta)) / (2 * $a);
                             $x2 = (-$b - sqrt($delta)) / (2 * $a);
                             $kq = "Phương trình có 2 nghiệm: 
-                                        x1 = $x1;
-                                        x2 = $x2;";
+                                            x1 = $x1;
+                                            x2 = $x2;";
                         }
                             elseif ($delta == 0) {
                                 $x = -$b / (2*$a);
@@ -67,13 +66,13 @@
                     }
                 }
             }
-            $kq = nl2br($kq);
+            $kq = ($kq);
         ?>
                                             <!-- Giao dien -->
         <div>
-            <h2 class="text">Giải phương trình bậc 2</h2>
+            <h2 class="text" style="color: #ffa500; margin-top: 10px">Giải phương trình bậc 2</h2>
             <hr style="color: #5DBB63;">
-            <form action="<?php echo get_url('?v=Lab02&a=ptb2') ?> " method="post">
+            <form action="<?php echo get_url('?v=Lab02&a=bai2') ?> " method="post">
                 
                 <p>Hệ số a: </p>
                 <input type="text" name="a" align="center">
@@ -87,9 +86,9 @@
                 <input type="text" name="c">
                 <p>=</p>
                 <p>Kết quả</p> <br>
-                <span class="ketqua"><?php echo !empty($kq)?$kq:"";?></span><br><br>
-                <input type="hidden" name="action" value="gpt">
-                <input type="submit" value="GPTB2">
+                <textarea cols="50" rows="3" style="overflow: hidden;"><?php echo !empty($kq)?$kq:"";?></textarea>   
+                <input type="hidden" name="action" value="gpt"><br><br>
+                <input type="submit" value="Giải" style="color: ffa500">
             </form>
         </div>
     </body>
