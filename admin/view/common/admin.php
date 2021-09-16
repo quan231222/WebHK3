@@ -7,13 +7,23 @@
     <title>Trang Quản Trị Hệ Thống</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-sm-12">
-                <?php //include_once('layout/header.php') ?>
-                <?php //include_once('layout/main.php') ?>
-                <?php //include_once('layout/footer.php') ?>
-                <h4>Day la trang Admin !</h4>
+                <?php include_once('layout/header.php') ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <?php include_once('layout/left.php') ?>
+            </div>
+            <div class="col-sm-9">
+                <?php include_once('layout/main.php') ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <?php include_once('layout/footer.php') ?>
             </div>
         </div>
     </div>

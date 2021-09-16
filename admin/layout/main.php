@@ -8,12 +8,12 @@
          case "addcat":
             include_once("view/category/add.php");
             break;
-         case "deletecat":
-            include_once("view/category/delete.php");
-            break;
          case "editcat":
             include_once("view/category/edit.php");
-            break;      
+            break;
+         case "deletecat":
+            include_once("view/category/delete.php");
+            break;            
      }
   }
   else

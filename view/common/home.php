@@ -12,9 +12,9 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
-                <?php //include_once('layout/header.php') ?>
-                <?php //include_once('layout/main.php') ?>
-                <?php //include_once('layout/footer.php') ?>
+                <?php include_once('layout/header.php') ?>
+                <?php include_once('layout/main.php') ?>
+                <?php include_once('layout/footer.php') ?>
             </div>
         </div>
     </div>
